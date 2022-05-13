@@ -41,7 +41,7 @@ recipe = Recipe.create!(
     id: "11",
     name: "チキンポテトバーグ",
     summary: "少ない肉でもボリューム満点になるアイデアに、感激の声が集まっています！味付けをいろいろ変えて楽しむのもGood✨",
-    cooktime: "00時間25分00秒"
+    cooktime: "25分00秒"
    )
    recipe.portrait.attach(io: File.open(Rails.root.join('app/assets/images/tori_jaga_han.png')),
    filename: 'tori_jaga_han.png')
@@ -50,7 +50,7 @@ recipe = Recipe.create!(
     id: "12",
     name: "鶏むね肉の照り焼き",
     summary: "お財布に優しい！ムネ肉のあっさり照り焼き。",
-    cooktime: "00時間25分00秒"
+    cooktime: "25分00秒"
    )
    recipe.portrait.attach(io: File.open(Rails.root.join('app/assets/images/teriyaki_tori.png')),
    filename: 'teriyaki_tori.png')
@@ -59,7 +59,7 @@ recipe = Recipe.create!(
     id: "13",
     name: "厚揚げモヤシ炒め",
     summary: "お財布に優しい！厚揚げとモヤシの炒め物です。",
-    cooktime: "00時間20分00秒"
+    cooktime: "20分00秒"
    )
    recipe.portrait.attach(io: File.open(Rails.root.join('app/assets/images/moyashi.png')),
    filename: 'moyashi.png')
@@ -68,7 +68,7 @@ recipe = Recipe.create!(
     id: "14",
     name: "豆腐とひき肉とオートミールのハンバーガー",
     summary: "ひき肉とオートミールと豆腐を混ぜたハンバーガー。",
-    cooktime: "00時間18分30秒"
+    cooktime: "18分30秒"
    )
    recipe.portrait.attach(io: File.open(Rails.root.join('app/assets/images/hanba-ga-.png')),
    filename: 'hanba-ga-.png')
@@ -77,7 +77,7 @@ recipe = Recipe.create!(
     id: "15",
     name: "白だしで出来る！だし巻き卵",
     summary: "おかずやおつまみに大活躍♪まろやかな卵の中に含まれた、だしの風味でほっと落ち着く、やさしい味わいのだし巻き卵です。",
-    cooktime: "00時間10分00秒"
+    cooktime: "10分00秒"
    )
    recipe.portrait.attach(io: File.open(Rails.root.join('app/assets/images/tamago.png')),
    filename: 'tamago.png')

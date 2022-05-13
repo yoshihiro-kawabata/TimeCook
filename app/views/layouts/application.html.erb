@@ -15,9 +15,6 @@
   </head>
 
   <body>
-    <% flash.each do |key, value| %>
-      <%= content_tag(:div, value, class: "#{key}") %>
-    <% end %>
     <nav class="header_nav">
     <ul class="global_nav">
     <li class="logo"><%= link_to "Time Cook", recipes_path %></li>
@@ -33,6 +30,9 @@
     <% end %>
     </ul>
     </nav>
+    <% flash.each do |key, value| %>
+      <%= content_tag(:div, value, class: "#{key}") %>
+    <% end %>
     <%= yield %>
   </body>
 
