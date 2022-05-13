@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  root 'recipes#index'
   resources :sessions, only: [:new, :create, :destroy]
   resources :users, only: [:new, :create, :show, :edit, :update, :destroy]
   resources :recipes, only: [:index, :create, :show, :edit]
