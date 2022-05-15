@@ -11,7 +11,7 @@ class UsersController < ApplicationController
       @user = User.new(user_params)
       if @user.save
         log_in(@user)
-        redirect_to user_path(@user.id)
+        redirect_to recipes_path
       else
         render :new
       end
@@ -27,7 +27,7 @@ class UsersController < ApplicationController
 
     def update
         if @user.update(user_params)
-            redirect_to user_path(@user.id)
+            redirect_to recipes_path
             flash[:notice] = 'アカウントを更新しました'
         else
             render :edit

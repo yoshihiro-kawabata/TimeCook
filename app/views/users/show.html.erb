@@ -19,7 +19,7 @@
         <td style="border:2px solid"><%= recipe.cooktime %></td>
         <td style="border:2px solid"><%= recipe.summary %></td>
         <td style="border:2px solid"><%= link_to '確認', recipe_path(recipe.id) %></td>
-        <td style="border:2px solid"><%= link_to '削除', user_path(user_id: @user.id,recipe_id: recipe.id), method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td style="border:2px solid"><%= link_to '削除', user_path(user_id: @user.id,recipe_id: recipe.id), method: :delete, data: { confirm: '本当に削除しますか？' } %></td>
       </tr>
     <% end %>
   </tbody>

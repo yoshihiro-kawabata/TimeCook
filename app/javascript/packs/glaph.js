@@ -2,6 +2,7 @@ var taname = document.getElementById('taname').value.split("', '");
 var tastti = document.getElementById('tastti').value.split(", ");
 var tacoti = document.getElementById('tacoti').value.split(", ");
 var tacolo = document.getElementById('tacolo').value.split("', '");
+var maxti = document.getElementById('time').value;
 var ctx = document.getElementById('mychart-bar-stack');
 var myChart = new Chart(ctx, {
     type: 'bar',
@@ -40,6 +41,9 @@ var myChart = new Chart(ctx, {
                 display: false
               },
               ticks : {
+                min: 0,
+                max: maxti,
+                stepSize: 5,
                 callback: function(tick) {
 
                     let min = Math.floor(tick % 3600 / 60);
